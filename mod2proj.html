@@ -19,33 +19,15 @@
                 </h1>
             </div>
                 <div class="nav_links" >
-                  <ul >
-                        <li><a href="#" class="nav__link
-                            nav__link--anchor
-                            nav__link--anchor-primary
-                            nav__link--anchor-primary:hover"
-                            >About</a></li>
-                        <li><a href="#" class="nav__link
-                            nav__link--anchor
-                            nav__link--anchor-primary
-                            nav__link--anchor-primary:hover"
-                            >Blog</a></li>
-                        <li><a href="#" class="nav__link
-                        nav__link--anchor
-                            nav__link--anchor-primary
-                            nav__link--anchor-primary:hover"
-                            >Pricing</a></li>
-                        <li><a href="#" class="nav__link
-                            nav__link--anchor
-                            nav__link--anchor-primary
-                            nav__link--anchor-primary:hover"
-                             >Contact Us</a></li>
-                        <li><a href="#" class="nav__link
-                            nav__link--anchor
-                            nav__link--anchor-primary
-                            nav__link--anchor-primary:hover" 
-                            >Login</a></li>
-                        <button class="btn__link btn__purple
+                     <input type="checkbox" class="toggle__nav">
+                    <div class="navchk"></div>
+                  <ul class="nav__link">
+                        <li><a href="#initpage">About</a></li>                             
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Login</a></li>
+                         <button class="btn__link 
                             nav__link--anchor
                             nav__link--anchor-primary
                             nav__link--anchor-primary:hover">
@@ -169,7 +151,7 @@
         <div class="desdev__row">
             <div class="desdev__desc">
                 <h6 class="devdes__h6, purple">QUALITY WORK</h6>
-                <h1>Design and Development By <span class="purple">Professionals</span></h1>
+                <h1 class="get__font--h1">Design and Development By <span class="purple">Professionals</span></h1>
                 <p class="lan__header--para">
                     Our team of experts is dedicated to creating high-quality 
                     designs and development solutions that meet your needs.
@@ -178,65 +160,57 @@
                     <button class="btn__link btn__purple">Learn More</button>
                 </div>
             </div>
-
+            
             <div class="desdev__img">
                 <img  class="desdev__img--width" src="./images/hero-screenshot-1.40a097b525c2f8c9808e.png" alt="" >
-             </div>
+            </div>
        </div> 
     </section>
 
     <section id="getstarted"> 
-            <div class="getstarted__row"> 
+         <div class="getstarted__row"> 
                 <div class="getstarted__img"> 
                     <img class="getstarted_img--wrapper" src="./images/hero-screenshot-2.241aac1fbc66db29d873.png" alt=" ">
                 </div>
+             <div class="getstarted__colstep">
                 <div class="getstarted__desc">
                     <div class="getstarted_heading">
                         <h6 class="devdes__h6, purple">STEPS</h6>
-                        <h1>Easy to <span class="purple">Get Started</span></h1>
+                        <h1 class="get__font--h1">Easy to <span class="purple">Get Started</span></h1>
                     </div> 
-                    <!-- First Step -->
-                    <div class="getstarted__list">
-                        <div class="getstarted__text">
-                            <div class="get__sequence">
-                                <p><span class="purple">01</span></p>
-                            </div>
-                            <div class="get__register">
-                                <p class="get__register--font">Register</p>
-                                <p>
-                                     Create an account with us using Google or Facebook.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Second Step -->
-                    <div class="getstarted__list">
-                        <div class="getstarted__text">
-                            <div class="get__sequence">
-                                <p><span class="purple">02</span></p>
-                            </div>
-                            <div class="get__register">
-                                <p class="get__register--font">Download</p>
-                                <p>
-                                     Browse and download the template that you like from the marketplace
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- Third Step  -->
-                    <div class="getstarted__list">
-                        <div class="getstarted__text">
-                            <div class="get__sequence">
-                                <p><span class="purple">03</span></p>
-                            </div>
-                            <div class="get__register">
-                                <p class="get__register--font">Run</p>
-                                <p>
-                                     Follow the instructions to setup and customise the template to your needs.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                </div>
+                    <!--First Step -->
+                <div class="getstarted__list">
+                  <div class="get__sequence">01</div>
+                  <div class="get__register">
+                    <div class="get__register--font">Register</div>
+                    <p class="get__step--para">
+                      Create an account with us using Google or Facebook.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Second Step -->
+                <div class="getstarted__list">
+                  <div class="get__sequence">02</div>
+                  <div class="get__register">
+                    <div class="get__register--font">Download</div>
+                    <p class="get__step--para">
+                      Browse and download the template that you like from the marketplace.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Third Step -->
+                 <div class="getstarted__list">
+                  <div class="get__sequence">03</div>
+                  <div class="get__register">
+                    <div class="get__register--font">Run</div>
+                    <p class="get__step--para">
+                      Follow the instructions to setup and customise the template to your needs.
+                    </p>
+                  </div>
+                </div>
                 </div>
             </div>
     </section>
@@ -364,6 +338,7 @@
                         <button class="btn__link btn__background_pink"><span class="white">Buy Now</span></button>
                     </div>
                 </div>
+             </div>
         </div>
     </section>
 
@@ -424,6 +399,7 @@
             </div>
             <div class="getstart__buttons">
                   <button class="getstart__button getstart__btn--link">Get Started</button>
+                  
                   <button class="getstart__button getstart__btn--link">Contact Us</button>
                 </div>
         </div>
@@ -489,14 +465,6 @@
                 </div>
                 </div>
         </div>
-    </section>
-
-
-
-
-
-
-
-    
+    </section>   
 </body>
 </html>
