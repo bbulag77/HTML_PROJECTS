@@ -539,14 +539,12 @@ h6 {
 }
 
 .values__desc {
-    width: 250px%;
+    width: 250px;
     margin-top: 16px;
     line-height: 1.625;
 }
 
-#pricing {
-
-}
+/* PRICING SECTION */
 
 .pricing__row {
     width: 100%;
