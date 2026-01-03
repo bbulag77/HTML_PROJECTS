@@ -1,15 +1,29 @@
-features__row@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
 }
-
+body {
+  padding: 0;
+  margin: 0;
+  
+}
 html {
   scroll-behavior: smooth;
 }
-
+.row {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+   
+}
+.row__narrow {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
 .logo {
   width: 40px;
   height: 40px;
@@ -242,11 +256,11 @@ h6 {
   border: 1px black;     */
 }
 
- #initpage {
+/* #initpage {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 24px; }
+  padding: 24px; }      */
 
 .landing__row {
   width: 100%;
@@ -851,24 +865,25 @@ h6 {
 
 #getstart {
     padding: 96px 0;
-    width: 100%;
+  width: 100%;
     margin:24px auto;
-     max-width: 1024px;
-    background-color: rgb(100, 21, 255);
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+     max-width: 1280px;
+  background-color: rgb(100, 21, 255);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .getstart__row {
     width: 100%;
-    margin: 0 auto;
-    max-width: 900px;
-    padding: 0 32px;
-    display: flex;
+  margin: 0 auto;
+  max-width: 1024px;   
+  padding: 0 32px;
+  display: flex;
+  flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+  align-items: center;
 }
 
 .getstart__lit {
@@ -882,7 +897,7 @@ h6 {
 .getstart__header {
     text-align: center;
     width: 100%;
-    max-width: 650px;
+  /*  max-width: 650px;  */
     margin-right: 32px;
 }
 
@@ -916,15 +931,15 @@ h6 {
 
 #footer {
     width: 100%;
-    max-width: 1280px;
+  /*  max-width: 1280px; */
+    margin: 0 auto;
     padding: 96px 32px;
     background-color: rgb(100, 21, 255);
-    align-items: center;
-    margin-bottom: 32px;
+    align-items: center; 
     position: relative;
     overflow: hidden;
 }
-
+ 
 .footer__row1 {
     display: flex;
     flex-direction: row;
@@ -1071,7 +1086,8 @@ h6 {
            background: #fff;
            width: 300px;
            height: 600px;
-           padding-top: 65px;    
+           padding-top: 65px; 
+               
         }
 
         .nav__link li a,
@@ -1130,7 +1146,12 @@ h6 {
          font-size: 16px;
           text-align: center;
         }
-
+        .getstart__row {
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          margin: 0 auto;
+        }
       } 
 
 @media (max-width: 768px) {
@@ -1161,6 +1182,7 @@ h6 {
         margin-bottom: 24px;
     }
     .getstarted__row {
+        display: flex;
         flex-direction: column;
         align-items: center;
     }
@@ -1174,6 +1196,14 @@ h6 {
         max-width: 448px;
         margin-bottom: 24px;
     }
+    .testimonial__bottom {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 }
 
 @media screen and (max-width: 640px) {
@@ -1285,12 +1315,20 @@ h6 {
         .testimonial__title {
           font-size: 40px;
         }
+         
         .getstart__row {
-          display: flex;
           flex-direction: column;
           align-items: center;
           text-align: center;
           margin: 0 auto;
+        }
+        .geetstart__header {
+          margin: 0 auto;
+          margin-bottom: 40px;
+        }
+         
+        .getstart__lit {
+          font-size: 24px;
         }
         .getstart__buttons {
           flex-direction: column;
